@@ -1,66 +1,54 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-  background: lightgray;
+  background: black;
 }
-
+.topBar {
+  padding: 50px;
+  background: rgb(18, 9, 27);
+}
+.topBar nav {
+  display: flex;
+  justify-content: space-around;
+}
+.topBar nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #050303, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.topBar nav a:hover {
+  color: palevioletred;
+}
 h1 {
-  background: green;
   text-align: center;
-  margin-top: 150px;
+  font-size: 3rem;
+  color: palevioletred;
+  text-shadow: 2px 2px 0px #050303, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
-#topAnime {
-  background: red;
-  position: absolute;
-  left: 15%;
-  top: 10px;
-  font-size: 1.5rem;
-}
-#myList {
-  background: blue;
-  right: 15%;
-  position: absolute;
-  top: 10px;
-  font-size: 1.5rem;
-}
-
 .search-container {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  margin-left: 50%;
-  transform: translateX(-40%);
-}
-#search {
-  border: 1px solid rgb(2, 19, 255);
-  height: 50px;
-  border-radius: 20px;
   text-align: center;
-  align-items: center;
-  display: flex;
+}
+input {
+  height: 30px;
   width: 500px;
+  border-radius: 20px;
 }
-button {
-  display: flex;
-}
-.leftPart {
-  border: 1px solid red;
-  height: 450px;
-  width: 50px;
+.sideBar {
   float: left;
-  top: 50%;
+  background: rgb(18, 9, 27);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
-.rightPart {
-  border: 1px solid red;
-  height: 450px;
-  width: 50px;
-  background: red;
-  float: right;
-
-  /* right: 0%;
-  position: relative;
-  top: -100%; */
+.sideBar ul li {
+  text-align: center;
+  margin: 20px 10px 40px;
+}
+main {
+  background: black;
 }
